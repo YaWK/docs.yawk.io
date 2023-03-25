@@ -1,0 +1,4 @@
+var namespaceYAWK_1_1WIDGETS_1_1CUSTOM__HTML =
+[
+    [ "CODE", "namespaceYAWK_1_1WIDGETS_1_1CUSTOM__HTML_1_1CODE.html", "namespaceYAWK_1_1WIDGETS_1_1CUSTOM__HTML_1_1CODE" ]
+];

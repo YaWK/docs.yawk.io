@@ -1,0 +1,4 @@
+var namespaceYAWK_1_1WIDGETS_1_1YOUTUBE =
+[
+    [ "VIDEO", "namespaceYAWK_1_1WIDGETS_1_1YOUTUBE_1_1VIDEO.html", "namespaceYAWK_1_1WIDGETS_1_1YOUTUBE_1_1VIDEO" ]
+];

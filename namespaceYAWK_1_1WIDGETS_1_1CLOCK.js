@@ -1,0 +1,4 @@
+var namespaceYAWK_1_1WIDGETS_1_1CLOCK =
+[
+    [ "CURRENT", "namespaceYAWK_1_1WIDGETS_1_1CLOCK_1_1CURRENT.html", "namespaceYAWK_1_1WIDGETS_1_1CLOCK_1_1CURRENT" ]
+];

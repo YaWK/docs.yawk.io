@@ -1,0 +1,4 @@
+var namespaceYAWK_1_1WIDGETS_1_1SUBMENU =
+[
+    [ "EMBED", "namespaceYAWK_1_1WIDGETS_1_1SUBMENU_1_1EMBED.html", "namespaceYAWK_1_1WIDGETS_1_1SUBMENU_1_1EMBED" ]
+];
