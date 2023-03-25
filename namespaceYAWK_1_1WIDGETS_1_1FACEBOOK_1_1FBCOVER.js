@@ -1,0 +1,4 @@
+var namespaceYAWK_1_1WIDGETS_1_1FACEBOOK_1_1FBCOVER =
+[
+    [ "fbCover", "classYAWK_1_1WIDGETS_1_1FACEBOOK_1_1FBCOVER_1_1fbCover.html", "classYAWK_1_1WIDGETS_1_1FACEBOOK_1_1FBCOVER_1_1fbCover" ]
+];

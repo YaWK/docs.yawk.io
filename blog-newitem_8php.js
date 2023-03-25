@@ -1,0 +1,28 @@
+var blog_newitem_8php =
+[
+    [ "$content", "blog-newitem_8php.html#a57b284fe00866494b33afa80ba729bed", null ],
+    [ "$editorSettings", "blog-newitem_8php.html#a7ca38623b605fe6f1ceed90b1dc2d6db", null ],
+    [ "$header", "blog-newitem_8php.html#a4f44601f2b9dc8a1644bce53c94ce622", null ],
+    [ "$lang", "blog-newitem_8php.html#aef14d81a8fb86bd7f06e8696ca8105b0", null ],
+    [ "$lang", "blog-newitem_8php.html#abf57b6dfcd5cbbafbd6e3d24f6e5ba74", null ],
+    [ "$lang", "blog-newitem_8php.html#a28771d6b56df782f18a4343e2120d004", null ],
+    [ "$lang", "blog-newitem_8php.html#a0e6e086df494fb569259253575a35985", null ],
+    [ "$lang", "blog-newitem_8php.html#a64cffceb1b32ca961066c390a5e39be0", null ],
+    [ "$lang", "blog-newitem_8php.html#aa0d725bf03060c780c2625200f87e845", null ],
+    [ "$lang", "blog-newitem_8php.html#a2e7decaf70ae3f5106e47c3e9632579a", null ],
+    [ "$lang", "blog-newitem_8php.html#a39fca213a1f2cc0f149543fb99871b1a", null ],
+    [ "$lang", "blog-newitem_8php.html#a12a0ae1e6b76e59cfd73c2bfc827ad6a", null ],
+    [ "$lang", "blog-newitem_8php.html#a8a9e36ac9fe812823aeb00d595622a3a", null ],
+    [ "$lang", "blog-newitem_8php.html#aa07d48922d7810d90296145730f18713", null ],
+    [ "$lang", "blog-newitem_8php.html#a82bdcd2915bb515f475d4be1bede331f", null ],
+    [ "$publishedHtml", "blog-newitem_8php.html#a7b5793ded4a3637d0f229f183f77e700", null ],
+    [ "else", "blog-newitem_8php.html#a03881228aa7440191c32ae98688ce545", null ],
+    [ "foreach", "blog-newitem_8php.html#a35ea8611809f5af626ced4f47ed33f79", null ],
+    [ "id", "blog-newitem_8php.html#a3df219c723fbe2713b7504bbf3897a9d", null ],
+    [ "if", "blog-newitem_8php.html#a231a87e8b78e49a7b7cecbef0f37ecd7", null ],
+    [ "if", "blog-newitem_8php.html#adedf43114556dfa2e164379995c615f9", null ],
+    [ "itemid", "blog-newitem_8php.html#aac622796164e83fb638575f9d7588d3a", null ],
+    [ "nbsp", "blog-newitem_8php.html#a943b4a28e511f6f89a9d0f63ad5bcc63", null ],
+    [ "pageid", "blog-newitem_8php.html#a6b61b4c981c37a7a0ed38295f29eb99e", null ],
+    [ "teasertext", "blog-newitem_8php.html#a114bdacd0b36564f7bdffb7639f98ac7", null ]
+];

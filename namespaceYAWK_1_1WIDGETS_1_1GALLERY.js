@@ -1,0 +1,4 @@
+var namespaceYAWK_1_1WIDGETS_1_1GALLERY =
+[
+    [ "IMAGES", "namespaceYAWK_1_1WIDGETS_1_1GALLERY_1_1IMAGES.html", "namespaceYAWK_1_1WIDGETS_1_1GALLERY_1_1IMAGES" ]
+];

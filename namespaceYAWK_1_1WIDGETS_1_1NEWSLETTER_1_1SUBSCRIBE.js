@@ -1,0 +1,4 @@
+var namespaceYAWK_1_1WIDGETS_1_1NEWSLETTER_1_1SUBSCRIBE =
+[
+    [ "newsletter", "classYAWK_1_1WIDGETS_1_1NEWSLETTER_1_1SUBSCRIBE_1_1newsletter.html", "classYAWK_1_1WIDGETS_1_1NEWSLETTER_1_1SUBSCRIBE_1_1newsletter" ]
+];
