@@ -1,4 +1,0 @@
-var namespaceYAWK_1_1WIDGETS_1_1FACEBOOK_1_1FEED =
-[
-    [ "fbFeed", "classYAWK_1_1WIDGETS_1_1FACEBOOK_1_1FEED_1_1fbFeed.html", "classYAWK_1_1WIDGETS_1_1FACEBOOK_1_1FEED_1_1fbFeed" ]
-];

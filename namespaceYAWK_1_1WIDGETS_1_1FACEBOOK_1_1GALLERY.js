@@ -1,4 +1,0 @@
-var namespaceYAWK_1_1WIDGETS_1_1FACEBOOK_1_1GALLERY =
-[
-    [ "fbGallery", "classYAWK_1_1WIDGETS_1_1FACEBOOK_1_1GALLERY_1_1fbGallery.html", "classYAWK_1_1WIDGETS_1_1FACEBOOK_1_1GALLERY_1_1fbGallery" ]
-];

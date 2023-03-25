@@ -1,4 +1,0 @@
-var namespaceYAWK_1_1WIDGETS_1_1PLYR =
-[
-    [ "PLAYER", "namespaceYAWK_1_1WIDGETS_1_1PLYR_1_1PLAYER.html", "namespaceYAWK_1_1WIDGETS_1_1PLYR_1_1PLAYER" ]
-];

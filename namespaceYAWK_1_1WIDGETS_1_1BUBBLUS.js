@@ -1,4 +1,0 @@
-var namespaceYAWK_1_1WIDGETS_1_1BUBBLUS =
-[
-    [ "MINDMAP", "namespaceYAWK_1_1WIDGETS_1_1BUBBLUS_1_1MINDMAP.html", "namespaceYAWK_1_1WIDGETS_1_1BUBBLUS_1_1MINDMAP" ]
-];

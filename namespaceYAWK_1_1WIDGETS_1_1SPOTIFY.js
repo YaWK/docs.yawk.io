@@ -1,4 +1,0 @@
-var namespaceYAWK_1_1WIDGETS_1_1SPOTIFY =
-[
-    [ "EMBED", "namespaceYAWK_1_1WIDGETS_1_1SPOTIFY_1_1EMBED.html", "namespaceYAWK_1_1WIDGETS_1_1SPOTIFY_1_1EMBED" ]
-];

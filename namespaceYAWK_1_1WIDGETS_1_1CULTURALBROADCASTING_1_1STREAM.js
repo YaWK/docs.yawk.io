@@ -1,4 +1,0 @@
-var namespaceYAWK_1_1WIDGETS_1_1CULTURALBROADCASTING_1_1STREAM =
-[
-    [ "culturalBroadcastingArchive", "classYAWK_1_1WIDGETS_1_1CULTURALBROADCASTING_1_1STREAM_1_1culturalBroadcastingArchive.html", "classYAWK_1_1WIDGETS_1_1CULTURALBROADCASTING_1_1STREAM_1_1culturalBroadcastingArchive" ]
-];
