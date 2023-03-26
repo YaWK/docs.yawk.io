@@ -93,14 +93,46 @@ $(document).ready(function(){initNavTree('update-fetchFiles_8php_source.html',''
 </div><!--header-->
 <div class="contents">
 <a href="update-fetchFiles_8php.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&lt;?php</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;use <a class="code" href="classYAWK_1_1update.html">YAWK\update</a>;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;include <span class="stringliteral">&#39;../../system/classes/update.php&#39;</span>;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// prepare vars</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// generate new update object</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="update-fetchFiles_8php.html#a13a7db07df65d01cfbca768f443084cc">    6</a></span>&#160;<a class="code" href="update-fetchFiles_8php.html#a13a7db07df65d01cfbca768f443084cc">$update</a> = <span class="keyword">new</span> <a class="code" href="classYAWK_1_1update.html">update</a>();</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<a class="code" href="update-fetchFiles_8php.html#a13a7db07df65d01cfbca768f443084cc">$update</a>-&gt;fetchFiles();</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;use <a class="code" href="classYAWK_1_1db.html">YAWK\db</a>;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;use <a class="code" href="classYAWK_1_1update.html">YAWK\update</a>;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;include <span class="stringliteral">&#39;../../system/classes/db.php&#39;</span>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;include <span class="stringliteral">&#39;../../system/classes/language.php&#39;</span>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;include <span class="stringliteral">&#39;../../system/classes/settings.php&#39;</span>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;include <span class="stringliteral">&#39;../../system/classes/update.php&#39;</span>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">/* set database object */</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordflow">if</span> (!isset(<a class="code" href="dismiss-notifications_8php.html#a1fa3127fc82f96b1436d871ef02be319">$db</a>))</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{   <span class="comment">// create new db object</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="dismiss-notifications_8php.html#a1fa3127fc82f96b1436d871ef02be319">$db</a> = <span class="keyword">new</span> <a class="code" href="classYAWK_1_1db.html">db</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordflow">if</span> (!isset(<a class="code" href="admin_2includes_2filemanager_8php.html#aa5ed3346b5437107e83ab49e3e311acb">$lang</a>))</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{   <span class="comment">// create new language object</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    $language = <span class="keyword">new</span> <a class="code" href="classYAWK_1_1language.html">YAWK\language</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">// init language</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    $language-&gt;init(<a class="code" href="dismiss-notifications_8php.html#a1fa3127fc82f96b1436d871ef02be319">$db</a>, <span class="stringliteral">&quot;backend&quot;</span>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// convert object param to array !important</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="admin_2includes_2filemanager_8php.html#aa5ed3346b5437107e83ab49e3e311acb">$lang</a> = (array) $language-&gt;lang;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// prepare vars</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordflow">if</span> (isset($_POST[<span class="stringliteral">&#39;updateVersion&#39;</span>])) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    $updateVersion = $_POST[<span class="stringliteral">&#39;updateVersion&#39;</span>];</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// generate new update object</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="update-generateLocalFilebase_8php.html#a42fedb8eb7fec5561207d9e9ed07a032">$update</a> = <span class="keyword">new</span> <a class="code" href="classYAWK_1_1update.html">update</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// fetch update files</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="update-generateLocalFilebase_8php.html#a42fedb8eb7fec5561207d9e9ed07a032">$update</a>-&gt;fetchFiles(<a class="code" href="dismiss-notifications_8php.html#a1fa3127fc82f96b1436d871ef02be319">$db</a>, $updateVersion, <a class="code" href="admin_2includes_2filemanager_8php.html#aa5ed3346b5437107e83ab49e3e311acb">$lang</a>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="update-fetchFiles_8php.html#a4ba2c43f9ce8e32fe20e661fa6e9aa29">   32</a></span>&#160;<span class="keywordflow">else</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{   <span class="comment">// error</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    echo <span class="stringliteral">&quot;Update Version could not be read!&quot;</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="ttc" id="aadmin_2includes_2filemanager_8php_html_aa5ed3346b5437107e83ab49e3e311acb"><div class="ttname"><a href="admin_2includes_2filemanager_8php.html#aa5ed3346b5437107e83ab49e3e311acb">$lang</a></div><div class="ttdeci">print $lang['FILEMAN_UPLOAD']</div><div class="ttdef"><b>Definition:</b> <a href="admin_2includes_2filemanager_8php_source.html#l00369">filemanager.php:369</a></div></div>
+<div class="ttc" id="aclassYAWK_1_1db_html"><div class="ttname"><a href="classYAWK_1_1db.html">YAWK\db</a></div><div class="ttdoc">Mysqli database class; returns db connection object.</div><div class="ttdef"><b>Definition:</b> <a href="db_8php_source.html#l00018">db.php:18</a></div></div>
+<div class="ttc" id="aclassYAWK_1_1language_html"><div class="ttname"><a href="classYAWK_1_1language.html">YAWK\language</a></div><div class="ttdoc">The language class - support multilingual backend.</div><div class="ttdef"><b>Definition:</b> <a href="language_8php_source.html#l00016">language.php:17</a></div></div>
 <div class="ttc" id="aclassYAWK_1_1update_html"><div class="ttname"><a href="classYAWK_1_1update.html">YAWK\update</a></div><div class="ttdoc">The update class - handles yawk's system update functions.</div><div class="ttdef"><b>Definition:</b> <a href="system_2classes_2update_8php_source.html#l00017">update.php:18</a></div></div>
-<div class="ttc" id="aupdate-fetchFiles_8php_html_a13a7db07df65d01cfbca768f443084cc"><div class="ttname"><a href="update-fetchFiles_8php.html#a13a7db07df65d01cfbca768f443084cc">$update</a></div><div class="ttdeci">$update</div><div class="ttdef"><b>Definition:</b> <a href="update-fetchFiles_8php_source.html#l00006">update-fetchFiles.php:6</a></div></div>
+<div class="ttc" id="adismiss-notifications_8php_html_a1fa3127fc82f96b1436d871ef02be319"><div class="ttname"><a href="dismiss-notifications_8php.html#a1fa3127fc82f96b1436d871ef02be319">$db</a></div><div class="ttdeci">$db</div><div class="ttdef"><b>Definition:</b> <a href="dismiss-notifications_8php_source.html#l00004">dismiss-notifications.php:4</a></div></div>
+<div class="ttc" id="aupdate-generateLocalFilebase_8php_html_a42fedb8eb7fec5561207d9e9ed07a032"><div class="ttname"><a href="update-generateLocalFilebase_8php.html#a42fedb8eb7fec5561207d9e9ed07a032">$update</a></div><div class="ttdeci">if(!isset($db)) if(!isset($lang)) $update</div><div class="ttdef"><b>Definition:</b> <a href="update-generateLocalFilebase_8php_source.html#l00023">update-generateLocalFilebase.php:23</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
@@ -108,7 +140,7 @@ $(document).ready(function(){initNavTree('update-fetchFiles_8php_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_f727a814017bdba699d5bcc5cbde70bb.html">yawk.io</a></li><li class="navelem"><a class="el" href="dir_94c8639a8c8b8ff5dcbe718a3622bd46.html">admin</a></li><li class="navelem"><a class="el" href="dir_1e70e0b0a8eae3da22c900aeca443232.html">js</a></li><li class="navelem"><a class="el" href="update-fetchFiles_8php.html">update-fetchFiles.php</a></li>
-    <li class="footer">Generated on Sun Mar 26 2023 03:26:02 for YaWK by <small>doxygen 1.9.1</small></li>
+    <li class="footer">Generated on Sun Mar 26 2023 06:22:02 for YaWK by <small>doxygen 1.9.1</small></li>
   </ul>
 </div>
 </body>
