@@ -324,128 +324,158 @@ $(document).ready(function(){initNavTree('update-helper_8js_source.html',''); in
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                    delay(<span class="keyword">function</span>(){</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                        $(<span class="stringliteral">&quot;#getFilebaseBtn&quot;</span>).<span class="keyword">remove</span>();</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                        $(<span class="stringliteral">&#39;#updateBtnNode&#39;</span>).append(newBtn);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                    }, 5000 ); <span class="comment">// end delay</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                },</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                <a class="code" href="js_2jquery_8jplayer_8min_8js.html#aa5788638d6450456ecff0e0589ca6247">error</a>: <span class="keyword">function</span> (response) {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                    reject(<span class="stringliteral">&#39;generateLocalFileBase() ERROR: &#39;</span> + response);</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                },</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            });</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        });</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    }</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    var delay = ( <span class="keyword">function</span>() {</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        var timer = 0;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">function</span>(callback, ms) {</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            clearTimeout (timer);</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            timer = setTimeout(callback, ms);</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        };</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    })();</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment">     * @brief read update filebase from remote update server</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">     * @details Read the filebase from local installation and generate a filebase.ini file to compare with the latest update filebase</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keyword">function</span> readUpdateFileBase(){</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        console.log(<span class="stringliteral">&#39;readUpdateFileBase() called&#39;</span>);</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        <span class="comment">// check via ajax, if there are updates available</span></div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        $.ajax({    <span class="comment">// create a new AJAX call</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <a class="code" href="menu-new_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>: <span class="stringliteral">&#39;POST&#39;</span>, <span class="comment">// GET or POST</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            url: <span class="stringliteral">&#39;js/update-readUpdateFilebase.php&#39;</span>, <span class="comment">// the file to call</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            success: <span class="keyword">function</span> (response) { <span class="comment">// fileBase checked successfully</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                <span class="comment">// update view with response</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                <span class="comment">// console.log(&quot;readUpdateFileBase() response: &quot; + response);</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                $(readUpdateFilebaseNode).html(response).fadeIn(1000);</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            },</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <a class="code" href="js_2jquery_8jplayer_8min_8js.html#aa5788638d6450456ecff0e0589ca6247">error</a>: <span class="keyword">function</span> (response) { <span class="comment">// on error..</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                console.log(<span class="stringliteral">&#39;readUpdateFileBase() ERROR: &#39;</span> +response);</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            }</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        });</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    }</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="comment">     * @brief Return the latest update version from update.yawk.io</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="comment">     * @details This function will connect to update.yawk.io and fetch the latest version number</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="comment">     * @return {string} version</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keyword">function</span> checkVersion(callback) {</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        fetch(<span class="stringliteral">&#39;https://update.yawk.io/?action=version&#39;</span>)</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            .then(response =&gt; {</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                <span class="keywordflow">if</span> (response.ok) {</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                    return response.json();</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                    throw new Error(<span class="stringliteral">&#39;API error: &#39;</span> + response.status);</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                }</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            })</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            .then(data =&gt; {</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                <span class="keywordflow">if</span> (data &amp;&amp; data.yawkversion) {</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                    callback(null, data.yawkversion);</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                    callback(<span class="stringliteral">&#39;Error fetching version: &#39;</span> + JSON.stringify(data));</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                }</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            })</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            .<span class="keywordflow">catch</span>(<a class="code" href="js_2jquery_8jplayer_8min_8js.html#aa5788638d6450456ecff0e0589ca6247">error</a> =&gt; {</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                callback(<span class="stringliteral">&#39;Error: &#39;</span> + <a class="code" href="js_2jquery_8jplayer_8min_8js.html#aa5788638d6450456ecff0e0589ca6247">error</a>);</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            });</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    }</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="comment">     * @brief Return the update config from update.yawk.io</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="comment">     * @details This function will connect to update.yawk.io and fetch the update config</span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment">     * @return {string} update config as json</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keyword">function</span> getUpdateConfig(callback)</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    {   <span class="comment">// get update config from update.yawk.io</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        fetch(<span class="stringliteral">&#39;https://update.yawk.io/?action=getUpdateConfig&#39;</span>)</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            .then(response =&gt; {</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                <span class="keywordflow">if</span> (response.ok) {</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                    return response.json();</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                    throw new Error(<span class="stringliteral">&#39;API error: &#39;</span> + response.status);</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                }</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            })</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            .then(data =&gt; {</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                <span class="keywordflow">if</span> (data) {</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                    callback(<span class="keyword">null</span>, data);</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                    callback(<span class="stringliteral">&#39;Error fetching data: &#39;</span> + JSON.stringify(data));</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                }</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            })</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            .<span class="keywordflow">catch</span>(<a class="code" href="js_2jquery_8jplayer_8min_8js.html#aa5788638d6450456ecff0e0589ca6247">error</a> =&gt; {</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                callback(<span class="stringliteral">&#39;Error: &#39;</span> + <a class="code" href="js_2jquery_8jplayer_8min_8js.html#aa5788638d6450456ecff0e0589ca6247">error</a>);</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            });</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    }</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="comment">     * @brief Compare two version numbers</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="comment">     * @param {string} v1</span></div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="comment">     * @param {string} v2</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="comment">     * @return {number} 1 if v1 &gt; v2, -1 if v1 &lt; v2, 0 if v1 === v2</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="comment">     * @details This function will compare two version numbers and return 1 if v1 &gt; v2, -1 if v1 &lt; v2, 0 if v1 === v2</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="comment">     * compareVersions(&#39;1.0.0&#39;, &#39;1.0.1&#39;); // -1</span></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="comment">     * compareVersions(&#39;1.0.1&#39;, &#39;1.0.0&#39;); // 1</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="comment">     * compareVersions(&#39;1.0.0&#39;, &#39;1.0.0&#39;); // 0</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keyword">function</span> compareVersions(v1, v2) {</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keyword">const</span> v1Parts = v1.split(<span class="charliteral">&#39;.&#39;</span>).map(Number);</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keyword">const</span> v2Parts = v2.split(<span class="charliteral">&#39;.&#39;</span>).map(Number);</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keyword">const</span> maxLength = Math.max(v1Parts.length, v2Parts.length);</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160; </div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="keywordflow">for</span> (let <a class="code" href="plyr_8js.html#a31757b66d441fa4ecc2a08ef109a6954">i</a> = 0; <a class="code" href="plyr_8js.html#a31757b66d441fa4ecc2a08ef109a6954">i</a> &lt; maxLength; <a class="code" href="plyr_8js.html#a31757b66d441fa4ecc2a08ef109a6954">i</a>++) {</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <span class="keyword">const</span> v1Part = v1Parts[<a class="code" href="plyr_8js.html#a31757b66d441fa4ecc2a08ef109a6954">i</a>] || 0;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            <span class="keyword">const</span> v2Part = v2Parts[<a class="code" href="plyr_8js.html#a31757b66d441fa4ecc2a08ef109a6954">i</a>] || 0;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160; </div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            <span class="keywordflow">if</span> (v1Part &gt; v2Part) {</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            }</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            <span class="keywordflow">if</span> (v1Part &lt; v2Part) {</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            }</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        }</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                        <span class="comment">// get new startUpdateBtn, check if it is clicked and call startUpdate()</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                        var startUpdateBtn = $(<span class="stringliteral">&quot;#startUpdateBtn&quot;</span>);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                        $(startUpdateBtn).click(<span class="keyword">function</span>() {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                            console.log(<span class="stringliteral">&#39;start update button clicked, start update process&#39;</span>);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                            <span class="comment">// start ajax call</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                            fetchFiles();</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                        });</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                    }, 5000 ); <span class="comment">// end delay</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                },</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                <a class="code" href="js_2jquery_8jplayer_8min_8js.html#aa5788638d6450456ecff0e0589ca6247">error</a>: <span class="keyword">function</span> (response) {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                    reject(<span class="stringliteral">&#39;generateLocalFileBase() ERROR: &#39;</span> + response);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                },</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            });</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        });</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    var delay = ( <span class="keyword">function</span>() {</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        var timer = 0;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">function</span>(callback, ms) {</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            clearTimeout (timer);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            timer = setTimeout(callback, ms);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        };</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    })();</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="comment">     * @brief start update process</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="comment">     * @details This function will start the update process by calling the fetchUpdate() method from update.php class</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keyword">function</span> fetchFiles()</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    {   var fetchUpdateNode = $(<span class="stringliteral">&quot;#fetchUpdateNode&quot;</span>);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        console.log(<span class="stringliteral">&#39;fetchUpdate() called&#39;</span>);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="comment">// check via ajax, if there are updates available</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        $.ajax({    <span class="comment">// create a new AJAX call</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <a class="code" href="menu-new_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>: <span class="stringliteral">&#39;POST&#39;</span>, <span class="comment">// GET or POST</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            url: <span class="stringliteral">&#39;js/update-fetchFiles.php&#39;</span>, <span class="comment">// the file to call</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            success: <span class="keyword">function</span> (response) { <span class="comment">// fileBase checked successfully</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                <span class="comment">// update view with response</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                console.log(<span class="stringliteral">&quot;fetchUpdate() response: &quot;</span> + response);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                $(fetchUpdateNode).html(response).fadeIn(1000);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            },</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            <a class="code" href="js_2jquery_8jplayer_8min_8js.html#aa5788638d6450456ecff0e0589ca6247">error</a>: <span class="keyword">function</span> (response) { <span class="comment">// on error..</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                console.log(<span class="stringliteral">&#39;fetchUpdate() ERROR: &#39;</span> +response);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            }</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        });</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    }</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="comment">     * @brief read update filebase from remote update server</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="comment">     * @details Read the filebase from local installation and generate a filebase.ini file to compare with the latest update filebase</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keyword">function</span> readUpdateFileBase(){</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        console.log(<span class="stringliteral">&#39;readUpdateFileBase() called&#39;</span>);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="comment">// check via ajax, if there are updates available</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        $.ajax({    <span class="comment">// create a new AJAX call</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            <a class="code" href="menu-new_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>: <span class="stringliteral">&#39;POST&#39;</span>, <span class="comment">// GET or POST</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            url: <span class="stringliteral">&#39;js/update-readUpdateFilebase.php&#39;</span>, <span class="comment">// the file to call</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            success: <span class="keyword">function</span> (response) { <span class="comment">// fileBase checked successfully</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                <span class="comment">// update view with response</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                <span class="comment">// console.log(&quot;readUpdateFileBase() response: &quot; + response);</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                $(readUpdateFilebaseNode).html(response).fadeIn(1000);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            },</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            <a class="code" href="js_2jquery_8jplayer_8min_8js.html#aa5788638d6450456ecff0e0589ca6247">error</a>: <span class="keyword">function</span> (response) { <span class="comment">// on error..</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                console.log(<span class="stringliteral">&#39;readUpdateFileBase() ERROR: &#39;</span> +response);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            }</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        });</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    }</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="comment">     * @brief Return the latest update version from update.yawk.io</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">     * @details This function will connect to update.yawk.io and fetch the latest version number</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="comment">     * @return {string} version</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keyword">function</span> checkVersion(callback) {</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        fetch(<span class="stringliteral">&#39;https://update.yawk.io/?action=version&#39;</span>)</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            .then(response =&gt; {</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                <span class="keywordflow">if</span> (response.ok) {</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                    return response.json();</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                    throw new Error(<span class="stringliteral">&#39;API error: &#39;</span> + response.status);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                }</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            })</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            .then(data =&gt; {</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                <span class="keywordflow">if</span> (data &amp;&amp; data.yawkversion) {</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                    callback(null, data.yawkversion);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                    callback(<span class="stringliteral">&#39;Error fetching version: &#39;</span> + JSON.stringify(data));</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                }</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            })</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            .<span class="keywordflow">catch</span>(<a class="code" href="js_2jquery_8jplayer_8min_8js.html#aa5788638d6450456ecff0e0589ca6247">error</a> =&gt; {</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                callback(<span class="stringliteral">&#39;Error: &#39;</span> + <a class="code" href="js_2jquery_8jplayer_8min_8js.html#aa5788638d6450456ecff0e0589ca6247">error</a>);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            });</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    }</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="comment">     * @brief Return the update config from update.yawk.io</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="comment">     * @details This function will connect to update.yawk.io and fetch the update config</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="comment">     * @return {string} update config as json</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keyword">function</span> getUpdateConfig(callback)</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    {   <span class="comment">// get update config from update.yawk.io</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        fetch(<span class="stringliteral">&#39;https://update.yawk.io/?action=getUpdateConfig&#39;</span>)</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            .then(response =&gt; {</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                <span class="keywordflow">if</span> (response.ok) {</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                    return response.json();</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                    throw new Error(<span class="stringliteral">&#39;API error: &#39;</span> + response.status);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                }</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            })</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            .then(data =&gt; {</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                <span class="keywordflow">if</span> (data) {</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                    callback(<span class="keyword">null</span>, data);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                    callback(<span class="stringliteral">&#39;Error fetching data: &#39;</span> + JSON.stringify(data));</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                }</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            })</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            .<span class="keywordflow">catch</span>(<a class="code" href="js_2jquery_8jplayer_8min_8js.html#aa5788638d6450456ecff0e0589ca6247">error</a> =&gt; {</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;                callback(<span class="stringliteral">&#39;Error: &#39;</span> + <a class="code" href="js_2jquery_8jplayer_8min_8js.html#aa5788638d6450456ecff0e0589ca6247">error</a>);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            });</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    }</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;}); <span class="comment">// END document ready</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="comment">     * @brief Compare two version numbers</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="comment">     * @param {string} v1</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="comment">     * @param {string} v2</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="comment">     * @return {number} 1 if v1 &gt; v2, -1 if v1 &lt; v2, 0 if v1 === v2</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="comment">     * @details This function will compare two version numbers and return 1 if v1 &gt; v2, -1 if v1 &lt; v2, 0 if v1 === v2</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="comment">     * compareVersions(&#39;1.0.0&#39;, &#39;1.0.1&#39;); // -1</span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="comment">     * compareVersions(&#39;1.0.1&#39;, &#39;1.0.0&#39;); // 1</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="comment">     * compareVersions(&#39;1.0.0&#39;, &#39;1.0.0&#39;); // 0</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="keyword">function</span> compareVersions(v1, v2) {</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <span class="keyword">const</span> v1Parts = v1.split(<span class="charliteral">&#39;.&#39;</span>).map(Number);</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="keyword">const</span> v2Parts = v2.split(<span class="charliteral">&#39;.&#39;</span>).map(Number);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keyword">const</span> maxLength = Math.max(v1Parts.length, v2Parts.length);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <span class="keywordflow">for</span> (let <a class="code" href="plyr_8js.html#a31757b66d441fa4ecc2a08ef109a6954">i</a> = 0; <a class="code" href="plyr_8js.html#a31757b66d441fa4ecc2a08ef109a6954">i</a> &lt; maxLength; <a class="code" href="plyr_8js.html#a31757b66d441fa4ecc2a08ef109a6954">i</a>++) {</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            <span class="keyword">const</span> v1Part = v1Parts[<a class="code" href="plyr_8js.html#a31757b66d441fa4ecc2a08ef109a6954">i</a>] || 0;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            <span class="keyword">const</span> v2Part = v2Parts[<a class="code" href="plyr_8js.html#a31757b66d441fa4ecc2a08ef109a6954">i</a>] || 0;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160; </div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            <span class="keywordflow">if</span> (v1Part &gt; v2Part) {</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            }</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            <span class="keywordflow">if</span> (v1Part &lt; v2Part) {</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            }</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        }</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    }</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;}); <span class="comment">// END document ready</span></div>
 <div class="ttc" id="aadmin_2includes_2dashboard_8php_html_a89b571b4aa1b306882f322b801075d08"><div class="ttname"><a href="admin_2includes_2dashboard_8php.html#a89b571b4aa1b306882f322b801075d08">if</a></div><div class="ttdeci">if(!isset( $lang))</div><div class="ttdef"><b>Definition:</b> <a href="admin_2includes_2dashboard_8php_source.html#l00012">dashboard.php:12</a></div></div>
 <div class="ttc" id="ajs_2browser_8js_html_aa4d4888597588a84fd5b1184d00c91f3"><div class="ttname"><a href="js_2browser_8js.html#aa4d4888597588a84fd5b1184d00c91f3">a</a></div><div class="ttdeci">function a</div><div class="ttdef"><b>Definition:</b> <a href="js_2browser_8js_source.html#l00014">browser.js:14</a></div></div>
 <div class="ttc" id="ajs_2jquery_8jplayer_8min_8js_html_a2eea0e86e970a9c717cb1e735e7eb6ed"><div class="ttname"><a href="js_2jquery_8jplayer_8min_8js.html#a2eea0e86e970a9c717cb1e735e7eb6ed">errorMsg</a></div><div class="ttdeci">c jPlayer errorMsg</div><div class="ttdef"><b>Definition:</b> <a href="js_2jquery_8jplayer_8min_8js_source.html#l00075">jquery.jplayer.min.js:75</a></div></div>
@@ -462,7 +492,7 @@ $(document).ready(function(){initNavTree('update-helper_8js_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_f727a814017bdba699d5bcc5cbde70bb.html">yawk.io</a></li><li class="navelem"><a class="el" href="dir_94c8639a8c8b8ff5dcbe718a3622bd46.html">admin</a></li><li class="navelem"><a class="el" href="dir_1e70e0b0a8eae3da22c900aeca443232.html">js</a></li><li class="navelem"><a class="el" href="update-helper_8js.html">update-helper.js</a></li>
-    <li class="footer">Generated on Sat Mar 25 2023 17:38:00 for YaWK by <small>doxygen 1.9.1</small></li>
+    <li class="footer">Generated on Sun Mar 26 2023 03:26:02 for YaWK by <small>doxygen 1.9.1</small></li>
   </ul>
 </div>
 </body>

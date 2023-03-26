@@ -10,6 +10,7 @@ var dir_1e70e0b0a8eae3da22c900aeca443232 =
     [ "friend-user.php", "friend-user_8php.html", "friend-user_8php" ],
     [ "reopen-singleNotification.php", "reopen-singleNotification_8php.html", "reopen-singleNotification_8php" ],
     [ "unfriend-user.php", "unfriend-user_8php.html", "unfriend-user_8php" ],
+    [ "update-fetchFiles.php", "update-fetchFiles_8php.html", "update-fetchFiles_8php" ],
     [ "update-generateLocalFilebase.php", "update-generateLocalFilebase_8php.html", "update-generateLocalFilebase_8php" ],
     [ "update-helper.js", "update-helper_8js.html", null ],
     [ "update-readUpdateFilebase.php", "update-readUpdateFilebase_8php.html", "update-readUpdateFilebase_8php" ],
