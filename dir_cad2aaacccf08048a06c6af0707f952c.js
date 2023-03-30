@@ -83,7 +83,7 @@ var dir_cad2aaacccf08048a06c6af0707f952c =
     [ "tipOfDay.php", "tipOfDay_8php.html", [
       [ "tipOfDay", "classYAWK_1_1tipOfDay.html", "classYAWK_1_1tipOfDay" ]
     ] ],
-    [ "update.php", "system_2classes_2update_8php.html", [
+    [ "update.php", "update_8php.html", [
       [ "update", "classYAWK_1_1update.html", "classYAWK_1_1update" ]
     ] ],
     [ "user.php", "user_8php.html", [

@@ -1,8 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"classYAWK_1_1FRAMEWORK_1_1cssFramework.html#ab9b2d270ce81d4cde46fd69c8e797487":[3,0,0,2,2,5],
-"classYAWK_1_1FRAMEWORK_1_1cssFramework.html#ac865de8bcc55eda3ea6b7d0d2008b758":[3,0,0,2,2,3],
-"classYAWK_1_1FRAMEWORK_1_1cssFramework.html#aec0c0ee95e401a5c4354b828ce9520fe":[3,0,0,2,2,1],
 "classYAWK_1_1PLUGINS_1_1BOOKING_1_1booking.html":[3,0,0,3,0,0],
 "classYAWK_1_1PLUGINS_1_1BOOKING_1_1booking.html#a01aca47839b2668f18e65c6e55b8fd4b":[3,0,0,3,0,0,21],
 "classYAWK_1_1PLUGINS_1_1BOOKING_1_1booking.html#a064309d59de22c27f672f7a151fb2e8b":[3,0,0,3,0,0,4],
@@ -249,5 +246,8 @@ var NAVTREEINDEX2 =
 "classYAWK_1_1WIDGETS_1_1BOOKING_1_1FORM_1_1bookingWidget.html#a83acfa3d0f092b871254d97463454dee":[3,0,0,4,1,0,0,23],
 "classYAWK_1_1WIDGETS_1_1BOOKING_1_1FORM_1_1bookingWidget.html#a840e57a1499ff86fcfe844c3dde6ad8d":[3,0,0,4,1,0,0,30],
 "classYAWK_1_1WIDGETS_1_1BOOKING_1_1FORM_1_1bookingWidget.html#a87991279d5cb52dcc2b86e7385b83bcb":[3,0,0,4,1,0,0,24],
-"classYAWK_1_1WIDGETS_1_1BOOKING_1_1FORM_1_1bookingWidget.html#a94d11d1cb59d9c2892d2d184353bbf7f":[3,0,0,4,1,0,0,4]
+"classYAWK_1_1WIDGETS_1_1BOOKING_1_1FORM_1_1bookingWidget.html#a94d11d1cb59d9c2892d2d184353bbf7f":[3,0,0,4,1,0,0,4],
+"classYAWK_1_1WIDGETS_1_1BOOKING_1_1FORM_1_1bookingWidget.html#a9f2205a708ff39835cab5e388e0194f5":[3,0,0,4,1,0,0,11],
+"classYAWK_1_1WIDGETS_1_1BOOKING_1_1FORM_1_1bookingWidget.html#aa454fdc5f91606f64fe88881b0ab0831":[3,0,0,4,1,0,0,21],
+"classYAWK_1_1WIDGETS_1_1BOOKING_1_1FORM_1_1bookingWidget.html#ab17343b9b8a1b0debe9235ddca50a238":[3,0,0,4,1,0,0,5]
 };

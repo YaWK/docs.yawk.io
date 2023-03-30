@@ -1,5 +1,16 @@
 var NAVTREEINDEX11 =
 {
+"message-toggle_8php.html":[4,0,0,2,2,4,2,8],
+"message-toggle_8php.html#a047170d6020a882807665812a27e2525":[4,0,0,2,2,4,2,8,2],
+"message-toggle_8php.html#a398aa515c5044367e3f29015c1ae3001":[4,0,0,2,2,4,2,8,0],
+"message-toggle_8php.html#a49a8a4009b02e49717caa88b128affc5":[4,0,0,2,2,4,2,8,1],
+"message-toggle_8php_source.html":[4,0,0,2,2,4,2,8],
+"message-trash_8php.html":[4,0,0,2,2,4,2,9],
+"message-trash_8php.html#a1bae53e19a257c5b8fadfe6327392ef0":[4,0,0,2,2,4,2,9,1],
+"message-trash_8php.html#a398aa515c5044367e3f29015c1ae3001":[4,0,0,2,2,4,2,9,0],
+"message-trash_8php_source.html":[4,0,0,2,2,4,2,9],
+"namespaceSimpleImage.html":[2,0,0],
+"namespaceYAWK.html":[2,0,1],
 "namespaceYAWK.html#a7859620f04fd7e1e5000fc12b154cd8e":[2,0,1,30],
 "namespaceYAWK_1_1BACKEND.html":[2,0,1,0],
 "namespaceYAWK_1_1BACKUP.html":[2,0,1,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX11 =
 "plugins_2signup_2admin_2signup_8php.html#a99a06ced57e229cd202c1ba44ae60439":[4,0,0,2,2,5,0,0,18],
 "plugins_2signup_2admin_2signup_8php.html#aad3117732fb52de02a808302476794b7":[4,0,0,2,2,5,0,0,1],
 "plugins_2signup_2admin_2signup_8php.html#ab4404bc38a5a93cbf142416840fdeaef":[4,0,0,2,2,5,0,0,16],
-"plugins_2signup_2admin_2signup_8php.html#adbbbd808ceddf48fbb8272380cac8294":[4,0,0,2,2,5,0,0,5],
-"plugins_2signup_2admin_2signup_8php.html#aef04778c51368caa5b1f14dc93f8a876":[4,0,0,2,2,5,0,0,0],
-"plugins_2signup_2admin_2signup_8php.html#af485ee1d02417ed7fddaf9842ede371c":[4,0,0,2,2,5,0,0,10],
-"plugins_2signup_2admin_2signup_8php.html#af50881d7eee86ded4aa5a54cd13c0c58":[4,0,0,2,2,5,0,0,14],
-"plugins_2signup_2admin_2signup_8php_source.html":[4,0,0,2,2,5,0,0],
-"plugins_2signup_2classes_2backend_8php.html":[4,0,0,2,2,5,1,0],
-"plugins_2signup_2classes_2backend_8php_source.html":[4,0,0,2,2,5,1,0],
-"plugins_2signup_2classes_2signup_8php.html":[4,0,0,2,2,5,1,2],
-"plugins_2signup_2classes_2signup_8php_source.html":[4,0,0,2,2,5,1,2],
-"plugins_2signup_2signup_8php.html":[4,0,0,2,2,5,3],
-"plugins_2signup_2signup_8php.html#a62b274798a5dbe7822ca9b9cc4422bd5":[4,0,0,2,2,5,3,1],
-"plugins_2signup_2signup_8php.html#abdaa82dfc9ecb2659aa6169cdfd04798":[4,0,0,2,2,5,3,0]
+"plugins_2signup_2admin_2signup_8php.html#adbbbd808ceddf48fbb8272380cac8294":[4,0,0,2,2,5,0,0,5]
 };

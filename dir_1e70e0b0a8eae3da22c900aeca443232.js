@@ -14,6 +14,7 @@ var dir_1e70e0b0a8eae3da22c900aeca443232 =
     [ "update-generateLocalFilebase.php", "update-generateLocalFilebase_8php.html", "update-generateLocalFilebase_8php" ],
     [ "update-helper.js", "update-helper_8js.html", null ],
     [ "update-readUpdateFilebase.php", "update-readUpdateFilebase_8php.html", "update-readUpdateFilebase_8php" ],
+    [ "update-runMigrations.php", "update-runMigrations_8php.html", "update-runMigrations_8php" ],
     [ "webmail-deleteMessage.php", "webmail-deleteMessage_8php.html", "webmail-deleteMessage_8php" ],
     [ "webmail-markAsSeen.php", "webmail-markAsSeen_8php.html", "webmail-markAsSeen_8php" ],
     [ "webmail-moveMessage.php", "webmail-moveMessage_8php.html", "webmail-moveMessage_8php" ],
