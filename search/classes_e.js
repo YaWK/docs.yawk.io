@@ -1,13 +1,11 @@
 var searchData=
 [
-  ['search_2082',['search',['../classYAWK_1_1search.html',1,'YAWK']]],
-  ['settings_2083',['settings',['../classYAWK_1_1PLUGINS_1_1USERPAGE_1_1settings.html',1,'YAWK\PLUGINS\USERPAGE\settings'],['../classYAWK_1_1settings.html',1,'YAWK\settings']]],
-  ['signup_2084',['signup',['../classYAWK_1_1PLUGINS_1_1SIGNUP_1_1signup.html',1,'YAWK::PLUGINS::SIGNUP']]],
-  ['simpleimage_2085',['SimpleImage',['../classYAWK_1_1SimpleImage.html',1,'YAWK']]],
-  ['socialbar_2086',['socialBar',['../classYAWK_1_1WIDGETS_1_1SOCIALBAR_1_1DISPLAY_1_1socialBar.html',1,'YAWK::WIDGETS::SOCIALBAR::DISPLAY']]],
-  ['soundcloud_2087',['soundcloud',['../classYAWK_1_1WIDGETS_1_1SOUNDCLOUD_1_1PLAYER_1_1soundcloud.html',1,'YAWK::WIDGETS::SOUNDCLOUD::PLAYER']]],
-  ['spotify_2088',['spotify',['../classYAWK_1_1WIDGETS_1_1SPOTIFY_1_1EMBED_1_1spotify.html',1,'YAWK::WIDGETS::SPOTIFY::EMBED']]],
-  ['stats_2089',['stats',['../classYAWK_1_1PLUGINS_1_1USERPAGE_1_1stats.html',1,'YAWK\PLUGINS\USERPAGE\stats'],['../classYAWK_1_1stats.html',1,'YAWK\stats']]],
-  ['submenu_2090',['submenu',['../classYAWK_1_1WIDGETS_1_1SUBMENU_1_1EMBED_1_1submenu.html',1,'YAWK::WIDGETS::SUBMENU::EMBED']]],
-  ['sys_2091',['sys',['../classYAWK_1_1sys.html',1,'YAWK']]]
+  ['template_2129',['template',['../classYAWK_1_1template.html',1,'YAWK']]],
+  ['tipofday_2130',['tipOfDay',['../classYAWK_1_1tipOfDay.html',1,'YAWK']]],
+  ['tourdates_2131',['tourdates',['../classYAWK_1_1PLUGINS_1_1TOURDATES_1_1tourdates.html',1,'YAWK::PLUGINS::TOURDATES']]],
+  ['twitch_2132',['twitch',['../classYAWK_1_1WIDGETS_1_1TWITCH_1_1EMBED_1_1twitch.html',1,'YAWK::WIDGETS::TWITCH::EMBED']]],
+  ['twittergrid_2133',['twitterGrid',['../classYAWK_1_1WIDGETS_1_1TWITTER_1_1GRID_1_1twitterGrid.html',1,'YAWK::WIDGETS::TWITTER::GRID']]],
+  ['twittertimeline_2134',['twitterTimeline',['../classYAWK_1_1WIDGETS_1_1TWITTER_1_1TIMELINE_1_1twitterTimeline.html',1,'YAWK::WIDGETS::TWITTER::TIMELINE']]],
+  ['twittertweet_2135',['twitterTweet',['../classYAWK_1_1WIDGETS_1_1TWITTER_1_1TWEET_1_1twitterTweet.html',1,'YAWK::WIDGETS::TWITTER::TWEET']]],
+  ['twittertweetbutton_2136',['twitterTweetButton',['../classYAWK_1_1WIDGETS_1_1TWITTER_1_1BUTTON_1_1twitterTweetButton.html',1,'YAWK::WIDGETS::TWITTER::BUTTON']]]
 ];

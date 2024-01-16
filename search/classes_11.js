@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['webmail_2103',['webmail',['../classYAWK_1_1webmail.html',1,'YAWK']]],
-  ['widget_2104',['widget',['../classYAWK_1_1widget.html',1,'YAWK']]]
+  ['youtube_2142',['youtube',['../classYAWK_1_1WIDGETS_1_1YOUTUBE_1_1VIDEO_1_1youtube.html',1,'YAWK::WIDGETS::YOUTUBE::VIDEO']]]
 ];

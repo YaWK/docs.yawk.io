@@ -1,11 +1,10 @@
 var classYAWK_1_1update =
 [
     [ "__construct", "classYAWK_1_1update.html#a713e61c7cf6a00b559299ce5eea616e0", null ],
-    [ "fetchFiles", "classYAWK_1_1update.html#a982edeae4637f3be0723e4802e2487c9", null ],
+    [ "fetchFiles", "classYAWK_1_1update.html#aaa095925e1ae2c270d9c8659fc93d70b", null ],
     [ "generateLocalFilebase", "classYAWK_1_1update.html#adc76d2665df45d415549177c9cf19ed1", null ],
     [ "getUpdateSettings", "classYAWK_1_1update.html#aa3f8854a7461c829b55eeab4bde3c05b", null ],
     [ "isServerReachable", "classYAWK_1_1update.html#a832caf961e7c253ef6193b8a5d6f3514", null ],
-    [ "logMessage", "classYAWK_1_1update.html#a87ec898cc15cc7098409159482efee01", null ],
     [ "readUpdateFilebaseFromServer", "classYAWK_1_1update.html#ab97b21f02ad7f097392edd762bf9a0ce", null ],
     [ "readUpdateIniFromServer", "classYAWK_1_1update.html#aecd589d2997239070fdb1232b7845227", null ],
     [ "recordMigration", "classYAWK_1_1update.html#a1c7bb59b0e030027238b86f7f8621953", null ],

@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['_5fbait_3937',['_bait',['../fuckAdBlock_8js.html#ab81b71793ecf152d9bd4bd15fb91d4c8',1,'fuckAdBlock.js']]],
-  ['_5fcheckbait_3938',['_checkBait',['../fuckAdBlock_8js.html#acc4bae682e73935a102f3a74ed9d264e',1,'fuckAdBlock.js']]],
-  ['_5fcreatbait_3939',['_creatBait',['../fuckAdBlock_8js.html#a7ae2379c3352d973d24d8ce0c07e4794',1,'fuckAdBlock.js']]],
-  ['_5fdestroybait_3940',['_destroyBait',['../fuckAdBlock_8js.html#aee45802f5279a04c5351443d6824dadf',1,'fuckAdBlock.js']]],
-  ['_5flog_3941',['_log',['../fuckAdBlock_8js.html#a42b167f698cb8473e4b239316f248d05',1,'fuckAdBlock.js']]],
-  ['_5foptions_3942',['_options',['../fuckAdBlock_8js.html#a441246a1dbed352f5c156aaf89a31cba',1,'fuckAdBlock.js']]],
-  ['_5fstoploop_3943',['_stopLoop',['../fuckAdBlock_8js.html#a9527baa6b389746470f24a24a5c10fdc',1,'fuckAdBlock.js']]],
-  ['_5fvar_3944',['_var',['../fuckAdBlock_8js.html#a2072d877e4f92959b050bca39d001dee',1,'fuckAdBlock.js']]]
+  ['_5fbait_4001',['_bait',['../fuckAdBlock_8js.html#ab81b71793ecf152d9bd4bd15fb91d4c8',1,'fuckAdBlock.js']]],
+  ['_5fcheckbait_4002',['_checkBait',['../fuckAdBlock_8js.html#acc4bae682e73935a102f3a74ed9d264e',1,'fuckAdBlock.js']]],
+  ['_5fcreatbait_4003',['_creatBait',['../fuckAdBlock_8js.html#a7ae2379c3352d973d24d8ce0c07e4794',1,'fuckAdBlock.js']]],
+  ['_5fdestroybait_4004',['_destroyBait',['../fuckAdBlock_8js.html#aee45802f5279a04c5351443d6824dadf',1,'fuckAdBlock.js']]],
+  ['_5flog_4005',['_log',['../fuckAdBlock_8js.html#a42b167f698cb8473e4b239316f248d05',1,'fuckAdBlock.js']]],
+  ['_5foptions_4006',['_options',['../fuckAdBlock_8js.html#a441246a1dbed352f5c156aaf89a31cba',1,'fuckAdBlock.js']]],
+  ['_5fstoploop_4007',['_stopLoop',['../fuckAdBlock_8js.html#a9527baa6b389746470f24a24a5c10fdc',1,'fuckAdBlock.js']]],
+  ['_5fvar_4008',['_var',['../fuckAdBlock_8js.html#a2072d877e4f92959b050bca39d001dee',1,'fuckAdBlock.js']]]
 ];

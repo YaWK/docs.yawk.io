@@ -29,6 +29,7 @@ var classYAWK_1_1sys =
     [ "getWeekday", "classYAWK_1_1sys.html#a30fab70189c84a79064610e54c9ba702", null ],
     [ "isBrowscapSet", "classYAWK_1_1sys.html#adb4964e42c4b09007eddf95de2d4a429", null ],
     [ "iStatusToString", "classYAWK_1_1sys.html#aa12a38f05329697f66cbe651233657a6", null ],
+    [ "logMessage", "classYAWK_1_1sys.html#afdb8a0cfdd1480ffa6bf1a5f232461e1", null ],
     [ "minify", "classYAWK_1_1sys.html#a17250fefced68f76e3aaf94651fc1f1b", null ],
     [ "minifyCSS", "classYAWK_1_1sys.html#a1e6bea74cbe8a855bfa4a3c8c4dfd85f", null ],
     [ "minifyHTML", "classYAWK_1_1sys.html#a390605422394f1e45007ccc37136ac93", null ],

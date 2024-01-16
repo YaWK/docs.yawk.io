@@ -16,7 +16,6 @@ var namespaceYAWK =
     [ "language", "classYAWK_1_1language.html", "classYAWK_1_1language" ],
     [ "licenses", "classYAWK_1_1licenses.html", "classYAWK_1_1licenses" ],
     [ "menu", "classYAWK_1_1menu.html", "classYAWK_1_1menu" ],
-    [ "openAI", "classYAWK_1_1openAI.html", "classYAWK_1_1openAI" ],
     [ "page", "classYAWK_1_1page.html", "classYAWK_1_1page" ],
     [ "plugin", "classYAWK_1_1plugin.html", "classYAWK_1_1plugin" ],
     [ "search", "classYAWK_1_1search.html", "classYAWK_1_1search" ],

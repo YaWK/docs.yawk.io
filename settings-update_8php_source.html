@@ -36,7 +36,7 @@ DoxygenAwesomeDarkModeToggle.init()
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">YaWK
-   &#160;<span id="projectnumber">23.3</span>
+   &#160;<span id="projectnumber">23.4</span>
    </div>
    <div id="projectbrief">Yet another WebKit</div>
   </td>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('settings-update_8php_source.html','');
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;echo backend::getTitle(<a class="code" href="admin_2includes_2filemanager_8php.html#aa5ed3346b5437107e83ab49e3e311acb">$lang</a>[<span class="stringliteral">&#39;UPDATE&#39;</span>], <a class="code" href="admin_2includes_2filemanager_8php.html#aa5ed3346b5437107e83ab49e3e311acb">$lang</a>[<span class="stringliteral">&#39;UPDATE_SUBTEXT&#39;</span>]);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;echo<span class="stringliteral">&quot;&lt;ol class=\&quot;breadcrumb\&quot;&gt;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="stringliteral">        &lt;li&gt;&lt;a href=\&quot;index.php\&quot; title=\&quot;$lang[DASHBOARD]\&quot;&gt;&lt;i class=\&quot;fa fa-dashboard\&quot;&gt;&lt;/i&gt; $lang[DASHBOARD]&lt;/a&gt;&lt;/li&gt;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="stringliteral">        &lt;li class=\&quot;active\&quot;&gt;&lt;a href=\&quot;index.php?page=update\&quot; title=\&quot;&quot;</span>.$lang[<span class="stringliteral">&#39;UPDATE&#39;</span>].<span class="stringliteral">&quot;\&quot;&gt;&lt;i class=\&quot;fa fa-code-fork\&quot;&gt;&lt;/i&gt;  &quot;</span>.<a class="code" href="admin_2includes_2filemanager_8php.html#aa5ed3346b5437107e83ab49e3e311acb">$lang</a>[<span class="stringliteral">&#39;UPDATE&#39;</span>].<span class="stringliteral">&quot;&lt;/a&gt;&lt;/li&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="stringliteral">        &lt;li class=\&quot;active\&quot;&gt;&lt;a href=\&quot;index.php?page=settings-update\&quot; title=\&quot;&quot;</span>.$lang[<span class="stringliteral">&#39;UPDATE&#39;</span>].<span class="stringliteral">&quot;\&quot;&gt;&lt;i class=\&quot;fa fa-code-fork\&quot;&gt;&lt;/i&gt;  &quot;</span>.<a class="code" href="admin_2includes_2filemanager_8php.html#aa5ed3346b5437107e83ab49e3e311acb">$lang</a>[<span class="stringliteral">&#39;UPDATE&#39;</span>].<span class="stringliteral">&quot;&lt;/a&gt;&lt;/li&gt;</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="stringliteral">     &lt;/ol&gt;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="stringliteral">    &lt;/section&gt;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="stringliteral">    &lt;!-- Main content --&gt;</span></div>
@@ -186,18 +186,19 @@ $(document).ready(function(){initNavTree('settings-update_8php_source.html','');
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;&lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;col-md-6&quot;</span>&gt;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;box box-default&quot;</span>&gt;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;box-header with-border&quot;</span>&gt;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            &lt;?php echo <span class="stringliteral">&#39;&lt;h3 class=&quot;box-title&quot;&gt;Filebase &lt;small&gt;of the latest YaWK release &lt;/small&gt; &#39;</span>.\YAWK\backend::printTooltip(<a class="code" href="admin_2includes_2filemanager_8php.html#aa5ed3346b5437107e83ab49e3e311acb">$lang</a>[<span class="stringliteral">&#39;UPDATE_INTEGRITY_TT&#39;</span>]).<span class="stringliteral">&#39;&lt;/h3&gt;&#39;</span>; ?&gt;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            &lt;?php echo <span class="stringliteral">&#39;&lt;h3 class=&quot;box-title&quot;&gt;Update &lt;small&gt;status information &lt;/small&gt; &#39;</span>.\YAWK\backend::printTooltip(<a class="code" href="admin_2includes_2filemanager_8php.html#aa5ed3346b5437107e83ab49e3e311acb">$lang</a>[<span class="stringliteral">&#39;UPDATE_INTEGRITY_TT&#39;</span>]).<span class="stringliteral">&#39;&lt;/h3&gt;&#39;</span>; ?&gt;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        &lt;/div&gt;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        &lt;div <span class="keyword">class</span>=<span class="stringliteral">&quot;box-body&quot;</span>&gt;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            &lt;div <span class="keywordtype">id</span>=<span class="stringliteral">&quot;fetchUpdateNode&quot;</span>&gt;&lt;/div&gt;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            &lt;div <span class="keywordtype">id</span>=<span class="stringliteral">&quot;readUpdateFilebaseNode&quot;</span>&gt;&lt;/div&gt;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        &lt;/div&gt;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    &lt;/div&gt;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;&lt;/div&gt;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            &lt;div <span class="keywordtype">id</span>=<span class="stringliteral">&quot;runMigrationsNode&quot;</span>&gt;&lt;/div&gt;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            &lt;div <span class="keywordtype">id</span>=<span class="stringliteral">&quot;fetchUpdateNode&quot;</span>&gt;&lt;/div&gt;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            &lt;div <span class="keywordtype">id</span>=<span class="stringliteral">&quot;readUpdateFilebaseNode&quot;</span>&gt;&lt;/div&gt;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        &lt;/div&gt;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    &lt;/div&gt;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;&lt;/div&gt;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;&lt;script <a class="code" href="menu-new_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=<span class="stringliteral">&quot;text/javascript&quot;</span> src=<span class="stringliteral">&quot;js/update-helper.js&quot;</span>&gt;&lt;/script&gt;</div>
-<div class="ttc" id="aadmin_2includes_2filemanager_8php_html_aa5ed3346b5437107e83ab49e3e311acb"><div class="ttname"><a href="admin_2includes_2filemanager_8php.html#aa5ed3346b5437107e83ab49e3e311acb">$lang</a></div><div class="ttdeci">print $lang['FILEMAN_UPLOAD']</div><div class="ttdef"><b>Definition:</b> <a href="admin_2includes_2filemanager_8php_source.html#l00369">filemanager.php:369</a></div></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;&lt;/div&gt;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;&lt;script <a class="code" href="menu-new_8php.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=<span class="stringliteral">&quot;text/javascript&quot;</span> src=<span class="stringliteral">&quot;js/update-helper.js&quot;</span>&gt;&lt;/script&gt;</div>
+<div class="ttc" id="aadmin_2includes_2filemanager_8php_html_aa5ed3346b5437107e83ab49e3e311acb"><div class="ttname"><a href="admin_2includes_2filemanager_8php.html#aa5ed3346b5437107e83ab49e3e311acb">$lang</a></div><div class="ttdeci">print $lang['FILEMAN_UPLOAD']</div><div class="ttdef"><b>Definition:</b> <a href="admin_2includes_2filemanager_8php_source.html#l00385">filemanager.php:385</a></div></div>
 <div class="ttc" id="aclassYAWK_1_1alert_html"><div class="ttname"><a href="classYAWK_1_1alert.html">YAWK\alert</a></div><div class="ttdoc">Throws a fancy Bootstrap Alert (success, info, warning or danger)</div><div class="ttdef"><b>Definition:</b> <a href="alert_8php_source.html#l00018">alert.php:19</a></div></div>
 <div class="ttc" id="aclassYAWK_1_1backend_html"><div class="ttname"><a href="classYAWK_1_1backend.html">YAWK\backend</a></div><div class="ttdoc">Backend class serves a few useful functions for the admin backend.</div><div class="ttdef"><b>Definition:</b> <a href="classes_2backend_8php_source.html#l00026">backend.php:27</a></div></div>
 <div class="ttc" id="aclassYAWK_1_1db_html"><div class="ttname"><a href="classYAWK_1_1db.html">YAWK\db</a></div><div class="ttdoc">Mysqli database class; returns db connection object.</div><div class="ttdef"><b>Definition:</b> <a href="db_8php_source.html#l00016">db.php:16</a></div></div>
@@ -217,7 +218,7 @@ $(document).ready(function(){initNavTree('settings-update_8php_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_f727a814017bdba699d5bcc5cbde70bb.html">yawk.io</a></li><li class="navelem"><a class="el" href="dir_94c8639a8c8b8ff5dcbe718a3622bd46.html">admin</a></li><li class="navelem"><a class="el" href="dir_8742ed7eefe5418c38b65115e0b28572.html">includes</a></li><li class="navelem"><a class="el" href="settings-update_8php.html">settings-update.php</a></li>
-    <li class="footer">Generated on Thu Mar 30 2023 22:49:21 for YaWK by <small>doxygen 1.9.1</small></li>
+    <li class="footer">Generated on Tue Jan 16 2024 15:10:07 for YaWK by <small>doxygen 1.9.1</small></li>
   </ul>
 </div>
 </body>

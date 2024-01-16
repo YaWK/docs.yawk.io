@@ -49,6 +49,7 @@ var classYAWK_1_1user =
     [ "$published", "classYAWK_1_1user.html#acf8f42913a8d9e1e5ce922036332c5b0", null ],
     [ "$street", "classYAWK_1_1user.html#a5d561ebb66080aa51bc8efd5b41a53c2", null ],
     [ "$templateID", "classYAWK_1_1user.html#ad68dcbfa6cf230b3ff5bf15538f09f2b", null ],
+    [ "$terms", "classYAWK_1_1user.html#ae586d68d9b9a004e56df22fd1fe366a5", null ],
     [ "$twitter", "classYAWK_1_1user.html#abb9bc92be8a35ab0e650d9d902bf4564", null ],
     [ "$url", "classYAWK_1_1user.html#a14ee3061545b0ccf8881aface6c2c8ee", null ],
     [ "$username", "classYAWK_1_1user.html#a86882c86ac632cdabde2813efc5d6f2f", null ],

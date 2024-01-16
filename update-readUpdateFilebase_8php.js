@@ -8,5 +8,6 @@ var update_readUpdateFilebase_8php =
     [ "$updateFilebase", "update-readUpdateFilebase_8php.html#a504acbe9f032d0e6c7c1277e455818bd", null ],
     [ "$updateFiles", "update-readUpdateFilebase_8php.html#adf496c2ccaaf2bc549a80238551442a0", null ],
     [ "$updateFilesPath", "update-readUpdateFilebase_8php.html#a991acbd3c28e29bc997bb88e08f73c5d", null ],
-    [ "else", "update-readUpdateFilebase_8php.html#ac07bf02e33ba36ba258e8a38c00ae3c7", null ]
+    [ "else", "update-readUpdateFilebase_8php.html#ac07bf02e33ba36ba258e8a38c00ae3c7", null ],
+    [ "foreach", "update-readUpdateFilebase_8php.html#a44bfc7f194331be0cd07b8146694f29a", null ]
 ];

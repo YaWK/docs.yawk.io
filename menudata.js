@@ -85,7 +85,8 @@ var menudata={children:[
 {text:"x",url:"functions_func_x.html#index_x"},
 {text:"z",url:"functions_func_z.html#index_z"}]},
 {text:"Variables",url:"functions_vars.html",children:[
-{text:"$",url:"functions_vars.html#index__24"}]}]}]},
+{text:"$",url:"functions_vars.html#index__24"},
+{text:"e",url:"functions_vars_e.html#index_e"}]}]}]},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},
 {text:"File Members",url:"globals.html",children:[

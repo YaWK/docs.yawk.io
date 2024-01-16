@@ -36,7 +36,6 @@ var dir_cad2aaacccf08048a06c6af0707f952c =
     [ "db.php", "db_8php.html", [
       [ "db", "classYAWK_1_1db.html", "classYAWK_1_1db" ]
     ] ],
-    [ "dbconfig.php", "dbconfig_8php.html", "dbconfig_8php" ],
     [ "editor.php", "editor_8php.html", [
       [ "editor", "classYAWK_1_1editor.html", "classYAWK_1_1editor" ]
     ] ],
@@ -57,9 +56,6 @@ var dir_cad2aaacccf08048a06c6af0707f952c =
     ] ],
     [ "menu.php", "menu_8php.html", [
       [ "menu", "classYAWK_1_1menu.html", "classYAWK_1_1menu" ]
-    ] ],
-    [ "openAI.php", "openAI_8php.html", [
-      [ "openAI", "classYAWK_1_1openAI.html", "classYAWK_1_1openAI" ]
     ] ],
     [ "page.php", "page_8php.html", "page_8php" ],
     [ "plugin.php", "plugin_8php.html", [

@@ -20,6 +20,7 @@ var classYAWK_1_1db =
     [ "real_escape_string", "classYAWK_1_1db.html#a87394c8164b454fe4ac80fad73f19a91", null ],
     [ "rollback", "classYAWK_1_1db.html#a48011790184b9e7302ac84cb246cb2b1", null ],
     [ "select", "classYAWK_1_1db.html#a8aa3eaeef683b50d4f40b8ff7a8b0e06", null ],
+    [ "truncateTable", "classYAWK_1_1db.html#a81a74d236542c7c7c3226fae3504174d", null ],
     [ "$config", "classYAWK_1_1db.html#af20b762cbadb27a59e28b5175372afa4", null ],
     [ "$connection", "classYAWK_1_1db.html#a87e18404efd7485d2dc21a1f0092fc8c", null ]
 ];

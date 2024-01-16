@@ -27,7 +27,6 @@ var dir_8742ed7eefe5418c38b65115e0b28572 =
     [ "settings-frontend.php", "settings-frontend_8php.html", "settings-frontend_8php" ],
     [ "settings-language.php", "settings-language_8php.html", "settings-language_8php" ],
     [ "settings-manage.php", "settings-manage_8php.html", "settings-manage_8php" ],
-    [ "settings-openai.php", "settings-openai_8php.html", "settings-openai_8php" ],
     [ "settings-robots.php", "settings-robots_8php.html", "settings-robots_8php" ],
     [ "settings-system.php", "settings-system_8php.html", "settings-system_8php" ],
     [ "settings-systeminfo.php", "settings-systeminfo_8php.html", "settings-systeminfo_8php" ],

@@ -27,6 +27,7 @@ var NAVTREE =
   [ "YaWK", "index.html", [
     [ "CONTRIBUTING", "md__var_www_htdocs_yawk_io_CONTRIBUTING.html", null ],
     [ "README", "md__var_www_htdocs_yawk_io_README.html", null ],
+    [ "Deprecated List", "deprecated.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -59,20 +60,20 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "404_8php.html",
-"blog-newitem_8php.html#a7b5793ded4a3637d0f229f183f77e700",
-"classYAWK_1_1PLUGINS_1_1BOOKING_1_1booking.html",
-"classYAWK_1_1WIDGETS_1_1BOOKING_1_1FORM_1_1bookingWidget.html#ab43291e520a8f96a2ea287e7bd3bc495",
-"classYAWK_1_1WIDGETS_1_1FACEBOOK_1_1GALLERY_1_1fbGallery.html#aa42563f74596d28cabb8d40c9b45e613",
-"classYAWK_1_1WIDGETS_1_1PLYR_1_1PLAYER_1_1plyr.html#a031db757dae04343b2d2ce18c52fc406",
-"classYAWK_1_1installer.html#a1047ad43f49124306aac56dd0d81f739",
-"classYAWK_1_1stats.html#a9eff19a36170def5006e1b11b07efb0b",
-"classYAWK_1_1user.html#aa124c00c69cc1cc9f43c2d9e9f0a8ca9",
-"dir_94f39552af1f0caab2c2fdbb10bf9463.html",
-"functions_func_q.html",
-"message-toggle_8php.html",
-"plugins_2signup_2admin_2signup_8php.html#aef04778c51368caa5b1f14dc93f8a876",
-"system_2templates_2YaWK-bootstrap3_2index_8php_source.html",
-"video_2js_2jquery_8jplayer_8min_8js.html#a2eea0e86e970a9c717cb1e735e7eb6ed"
+"blog-newitem_8php.html#a57b284fe00866494b33afa80ba729bed",
+"classYAWK_1_1FRAMEWORK_1_1cssFramework.html#ab9b2d270ce81d4cde46fd69c8e797487",
+"classYAWK_1_1SimpleImage.html#affaccf3d7c97d9b74d8f23a0ae08f8ed",
+"classYAWK_1_1WIDGETS_1_1FACEBOOK_1_1FEED_1_1fbFeed.html#a54c456736fe5f6bb74ee8ac6cb14fab5",
+"classYAWK_1_1WIDGETS_1_1NEWSLETTER_1_1SUBSCRIBE_1_1newsletter.html#acfbe8f0e2c1685147b6c7ede2d97055f",
+"classYAWK_1_1db.html#a8495f225c8db2fd1dd589d8193150c01",
+"classYAWK_1_1stats.html#a5a8e1677555956b4d867e3ff776e146f",
+"classYAWK_1_1update.html#abfd9dbf0bb248aefefc1c7332fbc5cc4",
+"dir_480e61657e465a21d953b0b3465aa572.html",
+"fuckAdBlock_8js.html#acc4bae682e73935a102f3a74ed9d264e",
+"message-fetch_8php.html#a9a4a6fba2208984cabb3afacadf33919",
+"plugins_2gallery_2gallery_8php.html",
+"system_2classes_2filemanager_8php.html",
+"user-new_8php.html#a4b9bb5e9f7a5ea9381bdbe31c44e9339"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

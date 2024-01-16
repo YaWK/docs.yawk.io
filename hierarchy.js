@@ -23,7 +23,6 @@ var hierarchy =
     [ "YAWK\\language", "classYAWK_1_1language.html", null ],
     [ "YAWK\\licenses", "classYAWK_1_1licenses.html", null ],
     [ "YAWK\\menu", "classYAWK_1_1menu.html", null ],
-    [ "YAWK\\openAI", "classYAWK_1_1openAI.html", null ],
     [ "YAWK\\page", "classYAWK_1_1page.html", null ],
     [ "YAWK\\plugin", "classYAWK_1_1plugin.html", null ],
     [ "YAWK\\PLUGINS\\BOOKING\\booking", "classYAWK_1_1PLUGINS_1_1BOOKING_1_1booking.html", null ],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readme_4052',['README',['../md__var_www_htdocs_yawk_io_README.html',1,'']]]
+  ['deprecated_20list_4127',['Deprecated List',['../deprecated.html',1,'']]]
 ];
