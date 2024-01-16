@@ -1,7 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"fuckAdBlock_8js.html#acc4bae682e73935a102f3a74ed9d264e":[5,0,0,2,5,19,1,0,2],
-"fuckAdBlock_8js.html#ae6bb4eef9dc6d90b6386febdef141f2d":[5,0,0,2,5,19,1,0,9],
 "fuckAdBlock_8js.html#aee45802f5279a04c5351443d6824dadf":[5,0,0,2,5,19,1,0,4],
 "fuckAdBlock_8js_source.html":[5,0,0,2,5,19,1,0],
 "fuckadblock_8php.html":[5,0,0,2,5,19,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX10 =
 "message-delete_8php_source.html":[5,0,0,2,2,4,2,0],
 "message-fetch_8php.html":[5,0,0,2,2,4,2,1],
 "message-fetch_8php.html#a0544c3fe466e421738dae463968b70ba":[5,0,0,2,2,4,2,1,2],
-"message-fetch_8php.html#a6733eb5f605d09eaede9845835d71c4e":[5,0,0,2,2,4,2,1,3]
+"message-fetch_8php.html#a6733eb5f605d09eaede9845835d71c4e":[5,0,0,2,2,4,2,1,3],
+"message-fetch_8php.html#a9a4a6fba2208984cabb3afacadf33919":[5,0,0,2,2,4,2,1,1],
+"message-fetch_8php.html#ab04fe98222bdfa1458e6b796285bab6a":[5,0,0,2,2,4,2,1,0]
 };

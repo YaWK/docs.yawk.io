@@ -1,7 +1,6 @@
 var dir_1e70e0b0a8eae3da22c900aeca443232 =
 [
     [ "accept-friend.php", "accept-friend_8php.html", "accept-friend_8php" ],
-    [ "contentBuilder.js", "contentBuilder_8js.html", null ],
     [ "decline-friend.php", "decline-friend_8php.html", "decline-friend_8php" ],
     [ "disconnect-friend.php", "disconnect-friend_8php.html", "disconnect-friend_8php" ],
     [ "dismiss-notifications.php", "dismiss-notifications_8php.html", "dismiss-notifications_8php" ],

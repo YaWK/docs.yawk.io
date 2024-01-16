@@ -1,7 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"message-fetch_8php.html#a9a4a6fba2208984cabb3afacadf33919":[5,0,0,2,2,4,2,1,1],
-"message-fetch_8php.html#ab04fe98222bdfa1458e6b796285bab6a":[5,0,0,2,2,4,2,1,0],
 "message-fetch_8php_source.html":[5,0,0,2,2,4,2,1],
 "message-new_8php.html":[5,0,0,2,2,4,2,2],
 "message-new_8php.html#a047170d6020a882807665812a27e2525":[5,0,0,2,2,4,2,2,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX11 =
 "plugins_2gallery_2admin_2gallery_8php.html#a89f070338c1ebb05c3f66696a4408151":[5,0,0,2,2,3,0,1,1],
 "plugins_2gallery_2admin_2gallery_8php_source.html":[5,0,0,2,2,3,0,1],
 "plugins_2gallery_2classes_2gallery_8php.html":[5,0,0,2,2,3,1,0],
-"plugins_2gallery_2classes_2gallery_8php_source.html":[5,0,0,2,2,3,1,0]
+"plugins_2gallery_2classes_2gallery_8php_source.html":[5,0,0,2,2,3,1,0],
+"plugins_2gallery_2gallery_8php.html":[5,0,0,2,2,3,3],
+"plugins_2gallery_2gallery_8php.html#acf16b014c42c68f1ff8f4704ac0f0e8b":[5,0,0,2,2,3,3,0]
 };

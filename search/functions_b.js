@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['k_2855',['k',['../plyr_8js.html#a626982cf39c17cb31e645ef00da0959e',1,'plyr.js']]],
-  ['keepwithin_2856',['keepWithin',['../classYAWK_1_1SimpleImage.html#a08f2d29b82b0df6db656c0b73e935f7d',1,'YAWK::SimpleImage']]]
+  ['k_2854',['k',['../plyr_8js.html#a626982cf39c17cb31e645ef00da0959e',1,'plyr.js']]],
+  ['keepwithin_2855',['keepWithin',['../classYAWK_1_1SimpleImage.html#a08f2d29b82b0df6db656c0b73e935f7d',1,'YAWK::SimpleImage']]]
 ];

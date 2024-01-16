@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['contributing_4126',['CONTRIBUTING',['../md__var_www_htdocs_yawk_io_CONTRIBUTING.html',1,'']]]
+  ['contributing_4125',['CONTRIBUTING',['../md__var_www_htdocs_yawk_io_CONTRIBUTING.html',1,'']]]
 ];
